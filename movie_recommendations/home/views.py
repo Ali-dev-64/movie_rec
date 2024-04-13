@@ -1,5 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
-def home(requset):
-    return HttpResponse("Hi :)")
+
+def home(request):
+    return render(request, "D:/ALI/movie_rec/movie_recommendations/home/templates/home/index.html")
